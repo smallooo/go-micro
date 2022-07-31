@@ -5,6 +5,7 @@ AUTH_BINARY=authApp
 LOGGER_BINARY=loggerServiceApp
 MAIL_BINARY=mailerApp
 LISTENER_BINARY=listenerApp
+FRONT_BINARY=frontEndApp
 
 
 # ## up: starts all containers in the background without forcing build
@@ -24,7 +25,7 @@ up:
 #     @echo Building (when required) and starting docker images...
 #     docker-compose up --build -d
 #     @echo Docker images built and started!
-up_build: build_broker build_auth build_logger build_mail build_listener
+up_build: build_broker build_auth build_logger build_mail build_listener build_front_linux
 	@echo Stopping docker images (if running...)
 	docker-compose down
 	@echo Building (when required) and starting docker images...
@@ -39,6 +40,12 @@ up_build: build_broker build_auth build_logger build_mail build_listener
 down:
 	@echo Stopping docker compose...
 	docker-compose down
+	@echo Done!
+
+
+build_front_linux:
+	@echo Building front end linux binary...
+	chdir ..\front-end && set GOOS=linux&& set GOARCH=amd64&& set CGO_ENABLED=0 && go build -o ${FRONT_BINARY} ./cmd/web
 	@echo Done!
 	
 # ## build_broker: builds the broker binary as a linux executable
