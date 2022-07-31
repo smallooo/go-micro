@@ -5,26 +5,40 @@ version: '3'
 
 services:
 
-  front-end:
-    image: dongminghe/front-end:1.0.0
+  caddy:
+    image: dongminghe/micro-caddy:1.0.0
     deploy:
       mode: replicated
       replicas: 1
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+  front-end:
+    image: dongminghe/front-end:1.0.1
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      BROKER_URL: "http://backend"
 
   broker-service:
-    image: tsawler/broker-service:1.0.1
+    image: dongminghe/broker-service:1.0.1
     deploy:
       mode: replicated
       replicas: 1
 
   listener-service:
-    image: tsawler/listener-service:1.0.0
+    image: dongminghe/listener-service:1.0.0
     deploy:
       mode: replicated
       replicas: 1
 
   authentication-service:
-    image: tsawler/authentication-service:1.0.0
+    image: dongminghe/authentication-service:1.0.0
     deploy:
       mode: replicated
       replicas: 1
@@ -32,13 +46,13 @@ services:
       DSN: "host=postgres port=5432 user=postgres password=password dbname=users sslmode=disable timezone=UTC connect_timeout=5"
 
   logger-service:
-    image: tsawler/logger-service:1.0.0
+    image: dongminghe/logger-service:1.0.0
     deploy:
       mode: replicated
       replicas: 1
 
   mailer-service:
-    image: tsawler/mail-service:1.0.0
+    image: dongminghe/mail-service:1.0.0
     deploy:
       mode: replicated
       replicas: 1
@@ -81,7 +95,6 @@ services:
     image: 'postgres:14.0'
     ports:
       - "5432:5432"
-    restart: always
     deploy:
       mode: replicated
       replicas: 1
@@ -91,3 +104,8 @@ services:
       POSTGRES_DB: users
     volumes:
       - ./db-data/postgres/:/var/lib/postgresql/data/
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
