@@ -16,6 +16,9 @@ docker service scale myapp_front-end=2
 
 docker service update  --image dongminghe/front-end:1.0.2 myapp_front-end
 
+docker build -f caddy.production.dockerfile -t dongminghe/micro-caddy-production:1.0.1 .
+
+docker push dongminghe/micro-caddy-production:1.0.1
 
 
 
