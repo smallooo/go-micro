@@ -15,7 +15,7 @@ func main() {
 	})
 
 	fmt.Println("Starting front end service on port 8081")
-	err := http.ListenAndServe(":81", nil)
+	err := http.ListenAndServe(":8081", nil)
 	if err != nil {
 		log.Panic(err)
 	}

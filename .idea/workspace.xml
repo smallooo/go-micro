@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec37308c-7ec7-464e-88d3-374027ff95ad" name="Changes" comment="add files" />
+    <list default="true" id="ec37308c-7ec7-464e-88d3-374027ff95ad" name="Changes" comment="add files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/readme.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
