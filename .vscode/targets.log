@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 07 14:43:26 2022
+# Make data base, printed on Thu Aug 11 00:52:12 2022
 
 # Variables
 
@@ -31,7 +31,8 @@ SYSTEMROOT = C:\Windows
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+P 
+SMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # environment
@@ -39,7 +40,7 @@ GOPATH = C:\Users\dm\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13872_MRDUWLPEETCFSDGU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6528_MFZJNLOFGPMKFDWT
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -91,7 +92,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 13872
+VSCODE_PID = 6528
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2022.1\bin;
 # automatic
@@ -211,7 +212,8 @@ SESSIONNAME = Console
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
-PROCESSOR_REVISION = 9a03
+PROCESSOR_REVISION 
+ = 9a03
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
 # variable set hash-table stats:
@@ -260,7 +262,8 @@ makefile:
 #  File has been updated.
 #  Failed to be updated.
 
-# Not a target:
+# 
+ Not a target:
 makefile.mak:
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -288,6 +291,6 @@ GNUmakefile:
 # strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Sun Aug 07 14:43:26 2022
+# Finished Make data base on Thu Aug 11 00:52:12 2022
 
  

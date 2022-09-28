@@ -39,10 +39,48 @@ type LogPayload struct {
 	Data string `json:"data"`
 }
 
+type Station struct {
+	Name    string `json:"name"`
+	Url     string `json:"url"`
+	Favicon string `json:"favicon"`
+}
+
 func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
+
+	station := Station{
+		Name:    "name",
+		Url:     "url",
+		Favicon: "favicon",
+	}
+
 	payload := jsonResponse{
 		Error:   false,
 		Message: "Hit the broker",
+		Data:    station,
+	}
+
+	_ = app.writeJSON(w, http.StatusOK, payload)
+
+}
+
+func (app *Config) Stations(w http.ResponseWriter, r *http.Request) {
+
+	station := Station{
+		Name:    "name",
+		Url:     "url",
+		Favicon: "favicon",
+	}
+
+	stations := []Station{
+		station,
+		station,
+		station,
+	}
+
+	payload := jsonResponse{
+		Error:   false,
+		Message: "This is a message",
+		Data:    stations,
 	}
 
 	_ = app.writeJSON(w, http.StatusOK, payload)

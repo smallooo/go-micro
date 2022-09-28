@@ -21,9 +21,36 @@ docker build -f caddy.production.dockerfile -t dongminghe/micro-caddy-production
 docker push dongminghe/micro-caddy-production:1.0.1
 
 
+backend:80
 
 
+
+
+---------------------------------------------------------------------------
+docker swarm leave --force
+
+docker pull dongminghe/micro-caddy-production:1.0.1
+
+docker service scale myapp_caddy=2
+
+docker service update --image dongminghe/micro-caddy-production:1.0.1 myapp_caddy
+
+docker stack rm myapp
+
+docker stack deploy -c swarm.yml myapp
+
+----------------------------------------------------------------------------------
 
 mail localhost:8025
 
-19851010sh
+
+ make build_broker
+
+ docker build -f broker-service.dockerfile -t dongminghe/broker-service:1.0.2 .
+
+ docker push dongminghe/broker-service:1.0.2
+
+docker service update --image dongminghe/broker-service:1.0.5 myapp_broker-service
+
+
+
