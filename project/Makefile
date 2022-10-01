@@ -91,7 +91,10 @@ build_mail:
 build_front:
 	@echo Building front end binary...
 	chdir ..\front-end && set CGO_ENABLED=0&& set GOOS=windows&& go build -o ${FRONT_END_BINARY} ./cmd/web
+	chdir ..\front-end && set GOOS=linux&& set GOARCH=amd64&& set CGO_ENABLED=0 && go build -o ${FRONT_BINARY} ./cmd/web
 	@echo Done!
+
+
 
 # ## start: starts the front end
 # start: build_front

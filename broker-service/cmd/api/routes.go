@@ -31,5 +31,7 @@ func (app *Config) routes() http.Handler {
 
 	mux.Post("/handle", app.HandleSubmission)
 
+	mux.Post("/wechatid", app.SearchWechat)
+
 	return mux
 }

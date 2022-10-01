@@ -110,6 +110,24 @@ func (app *Config) HandleSubmission(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func (app *Config) SearchWechat(w http.ResponseWriter, r *http.Request) {
+
+	station := Station{
+		Name:    "name: wechat name",
+		Url:     "url url for you",
+		Favicon: "favicon favicon",
+	}
+
+	payload := jsonResponse{
+		Error:   false,
+		Message: "Hit the broker wechat",
+		Data:    station,
+	}
+
+	_ = app.writeJSON(w, http.StatusOK, payload)
+
+}
+
 func (app *Config) logItem(w http.ResponseWriter, entry LogPayload) {
 	jsonData, _ := json.MarshalIndent(entry, "", "\t")
 
