@@ -24,7 +24,8 @@ const (
 var client *mongo.Client
 
 type Config struct {
-	Models data.Models
+	Models        data.Models
+	MessageModels data.MessageModels
 }
 
 func main() {

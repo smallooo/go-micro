@@ -25,5 +25,7 @@ func (app *Config) routes() http.Handler {
 
 	mux.Post("/log", app.WriteLog)
 
+	mux.Post("/message", app.Message)
+
 	return mux
 }

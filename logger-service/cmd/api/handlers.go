@@ -10,6 +10,10 @@ type JSONPayload struct {
 	Data string `json:"data"`
 }
 
+type JSONMessage struct {
+	Message string `json:"message"`
+}
+
 func (app *Config) WriteLog(w http.ResponseWriter, r *http.Request) {
 	// read json into var
 	var requestPayload JSONPayload
@@ -35,3 +39,33 @@ func (app *Config) WriteLog(w http.ResponseWriter, r *http.Request) {
 	app.writeJSON(w, http.StatusAccepted, resp)
 
 }
+
+//-------------------------------------------message----------------------------------------
+
+func (app *Config) Message(w http.ResponseWriter, r *http.Request) {
+	// read json into var
+	var jSONMessage JSONMessage
+	_ = app.readJSON(w, r, &jSONMessage)
+
+	// insert data
+	event := data.MessageEntry{
+		ID:   jSONMessage.Message,
+		Data: jSONMessage.Message,
+	}
+
+	err := app.MessageModels.MessageEntry.InsertMessage(event)
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	resp := jsonResponse{
+		Error:   false,
+		Message: "logged",
+	}
+
+	app.writeJSON(w, http.StatusAccepted, resp)
+
+}
+
+//------------------------------------------wechat--------------------------------------------

@@ -25,6 +25,10 @@ type Models struct {
 	LogEntry LogEntry
 }
 
+type MessageModels struct {
+	MessageEntry MessageEntry
+}
+
 type LogEntry struct {
 	ID        string    `bson:"_id,omitempty" json:"_id,omitempty"`
 	Name      string    `bson:"name" json:"name"`
@@ -149,3 +153,29 @@ func (l *LogEntry) Update() (*mongo.UpdateResult, error) {
 
 	return result, nil
 }
+
+//--------------------------------------------------------------for message paste-------------------------------------------------------------------------------
+
+type MessageEntry struct {
+	ID       string    `bson:"_id,omitempty" json:"_id,omitempty"`
+	Data     string    `bson:"data" json:"data"`
+	CreateAt time.Time `bson:"created_at" json:"created_at"`
+}
+
+func (l *MessageEntry) InsertMessage(entry MessageEntry) error {
+	collection := client.Database("comments").Collection("comments")
+
+	_, err := collection.InsertOne(context.TODO(), MessageEntry{
+		Data:     entry.Data,
+		CreateAt: time.Now(),
+	})
+
+	if err != nil {
+		log.Println("Error inserting into logs:", err)
+		return err
+	}
+
+	return nil
+}
+
+// -------------------------------------------------------------for wechat comment-------------------------------------------------------------------------------
