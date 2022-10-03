@@ -49,8 +49,8 @@ func (app *Config) Message(w http.ResponseWriter, r *http.Request) {
 
 	// insert data
 	event := data.MessageEntry{
-		ID:   jSONMessage.Message,
-		Data: jSONMessage.Message,
+		ID:      jSONMessage.Message,
+		Message: jSONMessage.Message,
 	}
 
 	err := app.MessageModels.MessageEntry.InsertMessage(event)

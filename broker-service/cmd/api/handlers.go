@@ -16,10 +16,11 @@ import (
 )
 
 type RequestPayload struct {
-	Action string      `json:"action"`
-	Auth   AuthPayload `json:"auth,omitempty"`
-	Log    LogPayload  `json:"log,omitempty"`
-	Mail   MailPayload `json:"mail,omitempty"`
+	Action  string         `json:"action"`
+	Auth    AuthPayload    `json:"auth,omitempty"`
+	Log     LogPayload     `json:"log,omitempty"`
+	Message MessagePayLoad `json:"message,omitempty"`
+	Mail    MailPayload    `json:"mail,omitempty"`
 }
 
 type MailPayload struct {
@@ -37,6 +38,11 @@ type AuthPayload struct {
 type LogPayload struct {
 	Name string `json:"name"`
 	Data string `json:"data"`
+}
+
+type MessagePayLoad struct {
+	ID      string `json:"id"`
+	Message string `json:"message"`
 }
 
 type Station struct {
@@ -104,6 +110,9 @@ func (app *Config) HandleSubmission(w http.ResponseWriter, r *http.Request) {
 		//app.logEventViaRabbit(w, requestPayload.Log)
 	case "mail":
 		app.sendMail(w, requestPayload.Mail)
+
+	case "message":
+		app.messageRPC(w, requestPayload.Message) //save message to mongoDB
 
 	default:
 		app.errorJSON(w, errors.New("unknown action"))
@@ -318,6 +327,34 @@ func (app *Config) logItemViaRPC(w http.ResponseWriter, l LogPayload) {
 	app.writeJSON(w, http.StatusAccepted, payload)
 }
 
+//save message to mongoDB
+func (app *Config) messageRPC(w http.ResponseWriter, l MessagePayLoad) {
+	client, err := rpc.Dial("tcp", "logger-service:5001")
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	messagePayload := MessagePayLoad{
+		ID:      l.ID,
+		Message: l.Message,
+	}
+
+	var result string
+	err = client.Call("MessageServer.InsertMessage", messagePayload, &result)
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	payload := jsonResponse{
+		Error:   false,
+		Message: result,
+	}
+
+	app.writeJSON(w, http.StatusAccepted, payload)
+}
+
 func (app *Config) LogViaGRPC(w http.ResponseWriter, r *http.Request) {
 	var requestPayload RequestPayload
 
@@ -357,3 +394,35 @@ func (app *Config) LogViaGRPC(w http.ResponseWriter, r *http.Request) {
 	app.writeJSON(w, http.StatusAccepted, payload)
 
 }
+
+//----------------------------------------------------------------------message----------------------------------------------------
+
+// MessageGET get message from mongoDB
+func (app *Config) MessageGET(w http.ResponseWriter, r *http.Request) {
+	client, err := rpc.Dial("tcp", "logger-service:5001")
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	messagePayload := MessagePayLoad{
+		ID:      "123",
+		Message: "This is message for you",
+	}
+
+	var result string
+	err = client.Call("MessageServer.GetMessage", messagePayload, &result)
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	payload := jsonResponse{
+		Error:   false,
+		Message: result,
+	}
+
+	app.writeJSON(w, http.StatusAccepted, payload)
+}
+
+//---------------------------------------------------------------------wechage message---------------------------------------------

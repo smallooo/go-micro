@@ -158,7 +158,7 @@ func (l *LogEntry) Update() (*mongo.UpdateResult, error) {
 
 type MessageEntry struct {
 	ID       string    `bson:"_id,omitempty" json:"_id,omitempty"`
-	Data     string    `bson:"data" json:"data"`
+	Message  string    `bson:"message" json:"message"`
 	CreateAt time.Time `bson:"created_at" json:"created_at"`
 }
 
@@ -166,7 +166,7 @@ func (l *MessageEntry) InsertMessage(entry MessageEntry) error {
 	collection := client.Database("comments").Collection("comments")
 
 	_, err := collection.InsertOne(context.TODO(), MessageEntry{
-		Data:     entry.Data,
+		Message:  entry.Message,
 		CreateAt: time.Now(),
 	})
 

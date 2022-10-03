@@ -4,51 +4,42 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec37308c-7ec7-464e-88d3-374027ff95ad" name="Changes" comment="add wechatid search">
+    <list default="true" id="ec37308c-7ec7-464e-88d3-374027ff95ad" name="Changes" comment="add message log">
+      <change afterPath="$PROJECT_DIR$/logger-service/cmd/api/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/configurationCache.log" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/configurationCache.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/targets.log" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/targets.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/brokerApp" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/brokerApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/cmd/api/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/cmd/api/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmd/web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmd/web/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/frontApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/frontApp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/frontEndApp" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/frontEndApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger-service/cmd/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/cmd/api/handlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger-service/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/cmd/api/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger-service/cmd/api/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/cmd/api/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger-service/data/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/data/models.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger-service/loggerServiceApp" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/loggerServiceApp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1247" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/1259" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2606" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610_vm" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2610_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2658" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2662" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2663" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2664" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2665" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2666" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2667" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2673" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2674" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2679" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2703" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/2704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/3455" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../Program Files/Go" />
   <component name="Git.Settings">
@@ -62,28 +53,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dm/Desktop/go/go-micro&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/dm/Desktop/go/go-micro"
   }
-}</component>
-  <component name="RunManager" selected="Makefile Target.start">
+}]]></component>
+  <component name="RunManager" selected="Go Build.go build frontend/cmd/web">
+    <configuration name="go build frontend/cmd/web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-micro" />
+      <working_directory value="$PROJECT_DIR$/front-end" />
+      <kind value="PACKAGE" />
+      <package value="frontend/cmd/web" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/front-end/cmd/web/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-micro" />
       <working_directory value="$PROJECT_DIR$/broker-service" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/broker-service/cmd/api/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="build_front" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/project/Makefile" target="build_front" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <configuration name="start" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
@@ -94,6 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build frontend/cmd/web" />
+        <item itemvalue="Makefile Target.build_front" />
         <item itemvalue="Makefile Target.start" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
@@ -117,7 +126,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add files" />
     <MESSAGE value="add wechatid search" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wechatid search" />
+    <MESSAGE value="add message log" />
+    <option name="LAST_COMMIT_MESSAGE" value="add message log" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

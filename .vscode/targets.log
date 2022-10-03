@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 11 00:52:12 2022
+# Make data base, printed on Sun Oct 02 22:23:01 2022
 
 # Variables
 
@@ -21,9 +21,11 @@ LC_ALL = C
 # environment
 USERPROFILE = C:\Users\dm
 # environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
 LOCALAPPDATA = C:\Users\dm\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\dm\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Windows\system32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -31,8 +33,7 @@ SYSTEMROOT = C:\Windows
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-P 
-SMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # environment
@@ -40,7 +41,7 @@ GOPATH = C:\Users\dm\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6528_MFZJNLOFGPMKFDWT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4424_CRLQGLFOXQBIEFCQ
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -54,7 +55,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\dm\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = C:\Users\dm\AppData\Roaming\Code\CachedData\e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb
 # environment
 LANG = C
 # default
@@ -69,6 +70,8 @@ PROCESSOR_ARCHITEW6432 = AMD64
 MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\dm\OneDrive
+# environment
+ANDROID_NDK_HOME = C:\Users\dm\AppData\Local\Android\Sdk\ndk\C:\Users\dm\AppData\Local\Android\Sdk\ndk\%ANDROID_NDK_HOME%
 # makefile
 CURDIR := c:/Users/dm/Desktop/go/go-micro
 # environment
@@ -92,7 +95,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6528
+VSCODE_PID = 4424
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2022.1\bin;
 # automatic
@@ -102,11 +105,13 @@ CLION = C:\Program Files\JetBrains\CLion 2022.1\bin;
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"e1243840abbb4e31a890d397033a9abf.zh-cn","_translationsConfigFile":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\e1243840abbb4e31a890d397033a9abf.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\e1243840abbb4e31a890d397033a9abf.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\e1243840abbb4e31a890d397033a9abf.zh-cn\\da76f93349a72022ca4670c1b84860304616aaa2","_corruptedFile":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\e1243840abbb4e31a890d397033a9abf.zh-cn\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"52a557de5c39607b04949a9e2e3aeee5.zh-cn","_translationsConfigFile":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\52a557de5c39607b04949a9e2e3aeee5.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\52a557de5c39607b04949a9e2e3aeee5.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\52a557de5c39607b04949a9e2e3aeee5.zh-cn\\e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb","_corruptedFile":"C:\\Users\\dm\\AppData\\Roaming\\Code\\clp\\52a557de5c39607b04949a9e2e3aeee5.zh-cn\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVECONSUMER = C:\Users\dm\OneDrive
 # default
 MAKE_HOST := Windows32
+# environment
+ANDROID_HOME = C:\Users\dm\AppData\Local\Android\Sdk
 # environment
 PROGRAMDATA = C:\ProgramData
 # default
@@ -130,7 +135,7 @@ PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
-COMPUTERNAME = DESKTOP-QQ6B4N6
+COMPUTERNAME = DM
 # default
 MAKEFILES := 
 # automatic
@@ -142,7 +147,7 @@ CHOCOLATEYLASTPATHUPDATE = 133025143153315798
 # environment
 INTELLIJ IDEA = C:\Program Files\JetBrains\IntelliJ IDEA 2022.1\bin;
 # environment
-LOGONSERVER = \\DESKTOP-QQ6B4N6
+LOGONSERVER = \\DM
 # environment
 USERNAME = dm
 # environment
@@ -158,7 +163,7 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERDOMAIN = DESKTOP-QQ6B4N6
+USERDOMAIN = DM
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -170,7 +175,7 @@ MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-QQ6B4N6
+USERDOMAIN_ROAMINGPROFILE = DM
 # environment
 NUMBER_OF_PROCESSORS = 20
 # environment
@@ -196,7 +201,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\dm\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\1929d4ad55c1c54230e5def859dc13be-1.70.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\1929d4ad55c1c54230e5def859dc13be-1.71.1-main-sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -210,14 +215,14 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := 
+ target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
-PROCESSOR_REVISION 
- = 9a03
+PROCESSOR_REVISION = 9a03
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=12/125=10%
+# Load=104/1024=10%, Rehash=0, Collisions=12/128=9%
 
 # Pattern-specific Variable Values
 
@@ -225,9 +230,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/dm/Desktop/go/go-micro, mtime 1659854565): 13 files, no impossibilities.
+# . (key c:/Users/dm/Desktop/go/go-micro, mtime 1664582300): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -262,8 +267,7 @@ makefile:
 #  File has been updated.
 #  Failed to be updated.
 
-# 
- Not a target:
+# Not a target:
 makefile.mak:
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -285,12 +289,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 216 B / avg = 10 B
-# current buf: size = 8174 B / used = 216 B / count = 20 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 226 B / avg = 10 B
+# current buf: size = 8174 B / used = 226 B / count = 21 / avg = 10 B
 
-# strcache performance: lookups = 23 / hit rate = 13%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Thu Aug 11 00:52:12 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Sun Oct 02 22:23:01 2022
 
  
